@@ -141,7 +141,7 @@
                     </includeOnlyProperties>
                 </configuration>
             </plugin>
-            <plugin>
+           <!-- <plugin>
                 <groupId>com.diffplug.spotless</groupId>
                 <artifactId>spotless-maven-plugin</artifactId>
                 <version>${spotless-maven-plugin.version}</version>
@@ -163,7 +163,7 @@
                         </goals>
                     </execution>
                 </executions>
-            </plugin>
+            </plugin>-->
         </plugins>
     </build>
 

@@ -21,7 +21,7 @@
         <module>catalog-service</module>
     </modules>
 
-    <build>
+   <!-- <build>
         <plugins>
             <plugin>
                 <groupId>com.diffplug.spotless</groupId>
@@ -47,5 +47,5 @@
                 </executions>
             </plugin>
         </plugins>
-    </build>
+    </build>-->
 </project>
