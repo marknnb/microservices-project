@@ -1,7 +1,7 @@
 # Read Me First
 The following was discovered as part of building this project:
 
-* The original package name 'com.mark.nnb.catalog-service' is invalid and this project uses 'com.mark.nnb.catalog_service' instead.
+* The original package name 'com.mark.nnb.catalog-service' is invalid and this project uses 'com.mark.nnb.catalog' instead.
 
 # Getting Started
 
