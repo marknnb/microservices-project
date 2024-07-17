@@ -21,3 +21,6 @@ This project contains couple of micro-services and intercommunication between th
 - make due only services and its methods are public otherwise give least privilege to other members and classes
 - collection based response use pagination
 - while writing test cases for rest assured make sure data in DB is in known state
+- maven plugin to create docker image
+- to build image
+> ./mvnw -pl catalog-service spring-boot:build-image -DskipTests

@@ -5,7 +5,6 @@ import static org.assertj.core.api.Assertions.assertThat;
 import static org.hamcrest.Matchers.hasSize;
 import static org.hamcrest.Matchers.is;
 
-
 import com.mark.nnb.catalog.AbstractIT;
 import com.mark.nnb.catalog.domain.Product;
 import io.restassured.http.ContentType;
