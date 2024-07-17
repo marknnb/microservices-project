@@ -20,4 +20,4 @@ This project contains couple of micro-services and intercommunication between th
 - dont Expose your entities to front end
 - make due only services and its methods are public otherwise give least privilege to other members and classes
 - collection based response use pagination
-- 
+- while writing test cases for rest assured make sure data in DB is in known state

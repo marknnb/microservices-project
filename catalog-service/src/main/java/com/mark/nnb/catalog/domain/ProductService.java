@@ -1,6 +1,7 @@
 package com.mark.nnb.catalog.domain;
 
 import jakarta.transaction.Transactional;
+import java.util.Optional;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
@@ -27,7 +28,7 @@ public class ProductService {
 
         Page<Product> productsPage = productRepository.findAll(pageable).map(ProductMapper::toProduct);
 
-        return new PagedResult<Product>(
+        return new PagedResult<>(
                 productsPage.getContent(),
                 productsPage.getTotalElements(),
                 productsPage.getNumber() + 1,
@@ -36,5 +37,9 @@ public class ProductService {
                 productsPage.isLast(),
                 productsPage.hasNext(),
                 productsPage.hasPrevious());
+    }
+
+    public Optional<Product> getProductByCode(String code) {
+        return productRepository.findByCode(code).map(ProductMapper::toProduct);
     }
 }
