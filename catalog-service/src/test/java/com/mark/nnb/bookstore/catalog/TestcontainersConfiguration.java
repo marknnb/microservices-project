@@ -1,4 +1,4 @@
-package com.mark.nnb.catalog;
+package com.mark.nnb.bookstore.catalog;
 
 import org.springframework.boot.test.context.TestConfiguration;
 import org.springframework.boot.testcontainers.service.connection.ServiceConnection;

@@ -1,4 +1,4 @@
-package com.mark.nnb.catalog.domain;
+package com.mark.nnb.bookstore.catalog.domain;
 
 import java.math.BigDecimal;
 

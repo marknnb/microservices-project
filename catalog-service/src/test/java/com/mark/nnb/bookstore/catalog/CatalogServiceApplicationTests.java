@@ -1,4 +1,4 @@
-package com.mark.nnb.catalog;
+package com.mark.nnb.bookstore.catalog;
 
 import org.junit.jupiter.api.Test;
 

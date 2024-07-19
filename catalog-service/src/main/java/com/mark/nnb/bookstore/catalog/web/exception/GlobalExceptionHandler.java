@@ -1,6 +1,7 @@
-package com.mark.nnb.catalog.web.exception;
+package com.mark.nnb.bookstore.catalog.web.exception;
 
-import com.mark.nnb.catalog.domain.ProductNotFoundException;
+import com.mark.nnb.bookstore.catalog.domain.ProductNotFoundException;
+
 import java.net.URI;
 import java.time.Instant;
 import org.springframework.http.HttpStatus;

@@ -1,4 +1,4 @@
-package com.mark.nnb.catalog.domain;
+package com.mark.nnb.bookstore.catalog.domain;
 
 import jakarta.transaction.Transactional;
 import java.util.Optional;

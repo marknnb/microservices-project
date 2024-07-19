@@ -1,4 +1,4 @@
-package com.mark.nnb.catalog.domain;
+package com.mark.nnb.bookstore.catalog.domain;
 
 import jakarta.validation.constraints.Min;
 import org.springframework.boot.context.properties.ConfigurationProperties;

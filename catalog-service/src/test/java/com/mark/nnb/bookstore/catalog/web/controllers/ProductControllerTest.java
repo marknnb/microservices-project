@@ -1,12 +1,12 @@
-package com.mark.nnb.catalog.web.controllers;
+package com.mark.nnb.bookstore.catalog.web.controllers;
 
 import static io.restassured.RestAssured.given;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.hamcrest.Matchers.hasSize;
 import static org.hamcrest.Matchers.is;
 
-import com.mark.nnb.catalog.AbstractIT;
-import com.mark.nnb.catalog.domain.Product;
+import com.mark.nnb.bookstore.catalog.domain.Product;
+import com.mark.nnb.bookstore.catalog.AbstractIT;
 import io.restassured.http.ContentType;
 import java.math.BigDecimal;
 import org.junit.jupiter.api.Test;

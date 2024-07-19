@@ -1,4 +1,4 @@
-package com.mark.nnb.catalog;
+package com.mark.nnb.bookstore.catalog;
 
 import io.restassured.RestAssured;
 import org.junit.jupiter.api.BeforeEach;

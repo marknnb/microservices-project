@@ -24,3 +24,6 @@ This project contains couple of micro-services and intercommunication between th
 - maven plugin to create docker image
 - to build image
 > ./mvnw -pl catalog-service spring-boot:build-image -DskipTests
+
+- docker compose -f infra.yml -f apps.yml up -d
+

@@ -1,4 +1,4 @@
-package com.mark.nnb.catalog.domain;
+package com.mark.nnb.bookstore.catalog.domain;
 
 public class ProductNotFoundException extends RuntimeException {
     public ProductNotFoundException(String message) {

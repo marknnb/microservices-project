@@ -1,9 +1,9 @@
-package com.mark.nnb.catalog.web.controllers;
+package com.mark.nnb.bookstore.catalog.web.controllers;
 
-import com.mark.nnb.catalog.domain.PagedResult;
-import com.mark.nnb.catalog.domain.Product;
-import com.mark.nnb.catalog.domain.ProductNotFoundException;
-import com.mark.nnb.catalog.domain.ProductService;
+import com.mark.nnb.bookstore.catalog.domain.PagedResult;
+import com.mark.nnb.bookstore.catalog.domain.Product;
+import com.mark.nnb.bookstore.catalog.domain.ProductNotFoundException;
+import com.mark.nnb.bookstore.catalog.domain.ProductService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 

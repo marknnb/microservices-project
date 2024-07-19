@@ -1,4 +1,4 @@
-package com.mark.nnb.catalog.domain;
+package com.mark.nnb.bookstore.catalog.domain;
 
 import org.jetbrains.annotations.Contract;
 import org.jetbrains.annotations.NotNull;
