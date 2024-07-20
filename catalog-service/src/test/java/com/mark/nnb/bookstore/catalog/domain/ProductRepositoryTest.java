@@ -1,12 +1,13 @@
 package com.mark.nnb.bookstore.catalog.domain;
 
-import static org.assertj.core.api.AssertionsForInterfaceTypes.assertThat;
-
-import java.math.BigDecimal;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
 import org.springframework.test.context.jdbc.Sql;
+
+import java.math.BigDecimal;
+
+import static org.assertj.core.api.AssertionsForInterfaceTypes.assertThat;
 
 @DataJpaTest(
         properties = {"spring.test.database.replace=none", "spring.datasource.url=jdbc:tc:postgresql:16-alpine:///db"})

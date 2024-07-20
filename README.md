@@ -23,7 +23,24 @@ This project contains couple of micro-services and intercommunication between th
 - while writing test cases for rest assured make sure data in DB is in known state
 - maven plugin to create docker image
 - to build image
-> ./mvnw -pl catalog-service spring-boot:build-image -DskipTests
 
-- docker compose -f infra.yml -f apps.yml up -d
+## New Concepts Learned out of this project
+
+- ProblemDetail in Exception handler
+- Add Generic Exception in Global exception Handler 
+- Default Values for RequestParam
+- Flyway set up
+- default Values to properties  :: spring.datasource.url=${DB_URL:jdbc:postgresql://localhost:15432/postgres}
+- `server.shutdown=graceful`
+- use of record
+- exception for certain code
+
+## Useful Commands 
+
+````cmd
+./mvnw -pl catalog-service spring-boot:build-image -DskipTests 
+
+docker compose -f infra.yml -f apps.yml up -d
+````
+
 
