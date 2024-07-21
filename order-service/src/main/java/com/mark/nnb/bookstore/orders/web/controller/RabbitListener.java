@@ -6,12 +6,12 @@ import org.springframework.stereotype.Service;
 public class RabbitListener {
 
     @org.springframework.amqp.rabbit.annotation.RabbitListener(queues = "${orders.new-orders-queue}")
-    public void handleNewOrder(MyPayload payload){
+    public void handleNewOrder(MyPayload payload) {
         System.out.println("New order = " + payload.content());
     }
 
     @org.springframework.amqp.rabbit.annotation.RabbitListener(queues = "${orders.delivered-orders-queue}")
-    public void handleDeliveredOrder(MyPayload payload){
+    public void handleDeliveredOrder(MyPayload payload) {
         System.out.println("Delivered order = " + payload.content());
     }
 }

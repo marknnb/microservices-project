@@ -47,8 +47,8 @@ POST http://localhost:8082/send
 Content-Type: application/json
 
 {
-"routingKey": "delivered-orders",
-"payload": {
-"content": "Order Created with id=1234"
-}
+  "routingKey": "delivered-orders",
+  "payload": {
+    "content": "Order Created with id=1234"
+  }
 }

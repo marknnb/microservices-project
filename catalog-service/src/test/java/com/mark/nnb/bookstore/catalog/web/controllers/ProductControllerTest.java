@@ -1,17 +1,16 @@
 package com.mark.nnb.bookstore.catalog.web.controllers;
 
-import com.mark.nnb.bookstore.catalog.AbstractIT;
-import com.mark.nnb.bookstore.catalog.domain.Product;
-import io.restassured.http.ContentType;
-import org.junit.jupiter.api.Test;
-import org.springframework.test.context.jdbc.Sql;
-
-import java.math.BigDecimal;
-
 import static io.restassured.RestAssured.given;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.hamcrest.Matchers.hasSize;
 import static org.hamcrest.Matchers.is;
+
+import com.mark.nnb.bookstore.catalog.AbstractIT;
+import com.mark.nnb.bookstore.catalog.domain.Product;
+import io.restassured.http.ContentType;
+import java.math.BigDecimal;
+import org.junit.jupiter.api.Test;
+import org.springframework.test.context.jdbc.Sql;
 
 @Sql(value = "/test-data.sql")
 class ProductControllerTest extends AbstractIT {
