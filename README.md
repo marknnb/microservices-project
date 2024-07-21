@@ -6,8 +6,10 @@ This project contains couple of micro-services and intercommunication between th
 
 # packing structure 
 
-![img.png](img.png)
-![img_1.png](img_1.png)
+![img.png](documents/img.png)
+![img_1.png](documents/img_1.png)
+![img_2.png](documents/img_2.png)
+![img_3.png](documents/img_3.png)
 
 ## Useful URLS
 
@@ -34,13 +36,16 @@ This project contains couple of micro-services and intercommunication between th
 - `server.shutdown=graceful`
 - use of record
 - exception for certain code
-
+- recompile when using dev tools so that you dont need to build again 
+- instantio
 ## Useful Commands 
 
 ````cmd
 ./mvnw -pl catalog-service spring-boot:build-image -DskipTests 
 
 docker compose -f infra.yml -f apps.yml up -d
+
+http://localhost:15672/ => for RabbitMQ dashboard
 ````
 
 

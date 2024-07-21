@@ -1,0 +1,54 @@
+
+
+### Test catalog -service ####
+
+GET http://localhost:8081/api/v1/recipe/page/1/size/5
+
+<> 2024-05-28T151712.200.json
+<> 2024-05-28T151455.200.-json
+
+###
+POST http://localhost:8081/api/v1/recipe
+
+###
+POST http://localhost:8080/api/gLendingBackendOutboundAPI/connect?
+    body={{$placeholder}}
+
+###
+GET http://localhost:8081/api/products?page=2
+
+<> 2024-07-15T161219.200.json
+<> 2024-07-15T161203.200.json
+<> 2024-07-15T161131.200.json
+<> 2024-07-15T161121.200.json
+<> 2024-07-15T161113.200.json
+
+###
+GET http://localhost:8081/api/products/P100
+
+<> 2024-07-15T180534.200.json
+<> 2024-07-15T180427.500.json
+
+
+### Test order-service ####
+POST http://localhost:8082/send
+Content-Type: application/json
+
+{
+  "routingKey": "new-orders",
+  "payload": {
+    "content": "Order Created with id=1234"
+  }
+}
+
+###
+
+POST http://localhost:8082/send
+Content-Type: application/json
+
+{
+"routingKey": "delivered-orders",
+"payload": {
+"content": "Order Created with id=1234"
+}
+}
