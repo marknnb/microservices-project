@@ -52,3 +52,31 @@ Content-Type: application/json
     "content": "Order Created with id=1234"
   }
 }
+
+###
+POST http://localhost:8082/api/orders
+Content-Type: application/json
+
+{
+  "customer" : {
+    "name": "Siva",
+    "email": "siva@gmail.com",
+    "phone": "999999999"
+  },
+  "deliveryAddress" : {
+    "addressLine1": "HNO 123",
+    "addressLine2": "Kukatpally",
+    "city": "Hyderabad",
+    "state": "Telangana",
+    "zipCode": "500072",
+    "country": "India"
+  },
+  "items": [
+    {
+      "code": "P100",
+      "name": "Product 1",
+      "price": 25.50,
+      "quantity": 1
+    }
+  ]
+}

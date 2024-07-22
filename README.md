@@ -38,7 +38,7 @@ channel for this project
 - use of record
 - exception for certain code
 - recompile when using dev tools so that you dont need to build again
-- instantio
+- instantio for test data generation 
 
 ## Useful Commands
 
