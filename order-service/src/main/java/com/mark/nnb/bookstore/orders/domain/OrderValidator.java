@@ -1,7 +1,14 @@
-/*
 package com.mark.nnb.bookstore.orders.domain;
 
-
+import com.mark.nnb.bookstore.orders.clients.catalog.Product;
+import com.mark.nnb.bookstore.orders.clients.catalog.ProductServiceClient;
+import com.mark.nnb.bookstore.orders.domain.models.CreateOrderRequest;
+import com.mark.nnb.bookstore.orders.domain.models.OrderItem;
+import java.util.Set;
+import org.jetbrains.annotations.NotNull;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.stereotype.Component;
 
 @Component
 class OrderValidator {
@@ -13,7 +20,7 @@ class OrderValidator {
         this.client = client;
     }
 
-    void validate(CreateOrderRequest request) {
+    void validate(@NotNull CreateOrderRequest request) {
         Set<OrderItem> items = request.items();
         for (OrderItem item : items) {
             Product product = client.getProductByCode(item.code())
@@ -28,4 +35,3 @@ class OrderValidator {
         }
     }
 }
-*/

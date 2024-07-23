@@ -75,7 +75,7 @@ Content-Type: application/json
     {
       "code": "P100",
       "name": "Product 1",
-      "price": 25.50,
+      "price": 341.05,
       "quantity": 1
     }
   ]

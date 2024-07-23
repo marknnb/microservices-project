@@ -9,6 +9,8 @@ import org.apache.http.HttpStatus;
 import org.junit.jupiter.api.Nested;
 import org.junit.jupiter.api.Test;
 
+import java.math.BigDecimal;
+
 class OrderControllerTest extends AbstractIT {
 
     @Nested
@@ -16,6 +18,7 @@ class OrderControllerTest extends AbstractIT {
 
         @Test
         void shouldCreateOrderSuccessfully() {
+            mockGetProductByCode("P100","Product 1",new BigDecimal("25.50"));
             var payload =
                     """
                             {

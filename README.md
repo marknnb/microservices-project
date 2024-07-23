@@ -39,6 +39,8 @@ channel for this project
 - exception for certain code
 - recompile when using dev tools so that you dont need to build again
 - instantio for test data generation 
+- Resilience4j : Retry , circuit breaker 
+- wiremock 
 
 ## Useful Commands
 
