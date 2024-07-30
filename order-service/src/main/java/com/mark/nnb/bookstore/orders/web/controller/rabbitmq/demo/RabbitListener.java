@@ -1,6 +1,6 @@
-package com.mark.nnb.bookstore.orders.web.controller;
+/*
+package com.mark.nnb.bookstore.orders.web.controller.rabbitmq.demo;
 
-import org.springframework.stereotype.Service;
 
 @Service
 public class RabbitListener {
@@ -15,3 +15,4 @@ public class RabbitListener {
         System.out.println("Delivered order = " + payload.content());
     }
 }
+*/

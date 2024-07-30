@@ -37,15 +37,22 @@ channel for this project
 - `server.shutdown=graceful`
 - use of record
 - exception for certain code
-- recompile when using dev tools so that you dont need to build again
+- recompile when using dev tools so that you don't need to build again
 - instantio for test data generation 
 - Resilience4j : Retry , circuit breaker 
 - wiremock 
-
+- Outbox pattern : scheduled job can retry again 
+  - CONSUMER SHOULD BE IDEMPOTENT . SHOULD BE ABLE TO HANDLE DUPLICATE MESSAGE
+- distributed locking for Job Scheduler
+- API Gateway: 
+  - Purpose of having API gateway
+- http declarative interface
 ## Useful Commands
 
 ````cmd
-./mvnw -pl catalog-service spring-boot:build-image -DskipTests 
+./mvnw -pl catalog-service spring-boot:build-image -DskipTests
+./mvnw -pl order-service spring-boot:build-image -DskipTests 
+./mvnw -pl notification-service spring-boot:build-image -DskipTests  
 
 docker compose -f infra.yml -f apps.yml up -d
 

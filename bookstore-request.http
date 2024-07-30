@@ -54,6 +54,7 @@ Content-Type: application/json
 }
 
 ###
+##sucess order
 POST http://localhost:8082/api/orders
 Content-Type: application/json
 
@@ -75,8 +76,50 @@ Content-Type: application/json
     {
       "code": "P100",
       "name": "Product 1",
-      "price": 341.05,
+      "price": 34.00,
       "quantity": 1
     }
   ]
 }
+
+###
+##failed order
+POST http://localhost:8082/api/orders
+Content-Type: application/json
+
+{
+  "customer" : {
+    "name": "Siva",
+    "email": "siva@gmail.com",
+    "phone": "999999999"
+  },
+  "deliveryAddress" : {
+    "addressLine1": "HNO 123",
+    "addressLine2": "Kukatpally",
+    "city": "Hyderabad",
+    "state": "Telangana",
+    "zipCode": "500072",
+    "country": "INDIA"
+  },
+  "items": [
+    {
+      "code": "P100",
+      "name": "Product 1",
+      "price": 34.00,
+      "quantity": 1
+    }
+  ]
+}
+
+###
+
+###
+##failed order
+GET http://localhost:8082/api/orders
+Content-Type: application/json\
+
+###
+###2039772b-41e3-4458-abc9-71dede7ac407
+##failed order
+GET http://localhost:8082/api/orders/2039772b-41e3-4458-abc9-71dede7ac407
+Content-Type: application/json\

@@ -1,18 +1,18 @@
 package com.mark.nnb.bookstore.orders.web.controller;
 
+import com.mark.nnb.bookstore.orders.domain.OrderNotFoundException;
 import com.mark.nnb.bookstore.orders.domain.OrderService;
 import com.mark.nnb.bookstore.orders.domain.SecurityService;
 import com.mark.nnb.bookstore.orders.domain.models.CreateOrderRequest;
 import com.mark.nnb.bookstore.orders.domain.models.CreateOrderResponse;
+import com.mark.nnb.bookstore.orders.domain.models.OrderDTO;
+import com.mark.nnb.bookstore.orders.domain.models.OrderSummary;
 import jakarta.validation.Valid;
+import java.util.List;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.http.HttpStatus;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseStatus;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/api/orders")
@@ -35,7 +35,7 @@ class OrderController {
         return orderService.createOrder(userName, request);
     }
 
-    /*    @GetMapping
+    @GetMapping
     List<OrderSummary> getOrders() {
         String userName = securityService.getLoginUserName();
         log.info("Fetching orders for user: {}", userName);
@@ -49,5 +49,5 @@ class OrderController {
         return orderService
                 .findUserOrder(userName, orderNumber)
                 .orElseThrow(() -> new OrderNotFoundException(orderNumber));
-    }*/
+    }
 }

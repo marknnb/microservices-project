@@ -1,10 +1,6 @@
 package com.mark.nnb.bookstore.orders.domain;
 
-import com.mark.nnb.bookstore.orders.domain.models.OrderCancelledEvent;
-import com.mark.nnb.bookstore.orders.domain.models.OrderCreatedEvent;
-import com.mark.nnb.bookstore.orders.domain.models.OrderDeliveredEvent;
-import com.mark.nnb.bookstore.orders.domain.models.OrderErrorEvent;
-import com.mark.nnb.bookstore.orders.domain.models.OrderItem;
+import com.mark.nnb.bookstore.orders.domain.models.*;
 import java.time.LocalDateTime;
 import java.util.Set;
 import java.util.UUID;

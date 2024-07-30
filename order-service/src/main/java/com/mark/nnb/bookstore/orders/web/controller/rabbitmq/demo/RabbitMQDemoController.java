@@ -1,10 +1,6 @@
-package com.mark.nnb.bookstore.orders.web.controller;
+/*
+package com.mark.nnb.bookstore.orders.web.controller.rabbitmq.demo;
 
-import com.mark.nnb.bookstore.orders.ApplicationProperties;
-import org.springframework.amqp.rabbit.core.RabbitTemplate;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class RabbitMQDemoController {
@@ -21,3 +17,4 @@ public class RabbitMQDemoController {
         rabbitTemplate.convertAndSend(properties.orderEventsExchange(), message.routingKey(), message.payload());
     }
 }
+*/

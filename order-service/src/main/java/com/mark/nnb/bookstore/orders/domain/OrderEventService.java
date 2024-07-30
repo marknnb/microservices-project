@@ -2,11 +2,7 @@ package com.mark.nnb.bookstore.orders.domain;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.mark.nnb.bookstore.orders.domain.models.OrderCancelledEvent;
-import com.mark.nnb.bookstore.orders.domain.models.OrderCreatedEvent;
-import com.mark.nnb.bookstore.orders.domain.models.OrderDeliveredEvent;
-import com.mark.nnb.bookstore.orders.domain.models.OrderErrorEvent;
-import com.mark.nnb.bookstore.orders.domain.models.OrderEventType;
+import com.mark.nnb.bookstore.orders.domain.models.*;
 import java.util.List;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
